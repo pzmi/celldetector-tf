@@ -1,0 +1,13 @@
+syntax:glob   # This line is not needed for .gitignore files.
+*.py[cod]     # Will match .pyc, .pyo and .pyd files.
+__pycache__/  # Exclude the whole folder
+.Python
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Ll]ib64
+[Ll]ocal
+[Ss]cripts
+pyvenv.cfg
+.venv
+pip-selfcheck.json
