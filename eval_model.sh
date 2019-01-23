@@ -1,14 +1,15 @@
 #!/bin/bash
 
 model_path=$1
+dataset_path=$2
 config_original=${model_path}/pipeline.config
 config=${model_path}/copy_pipeline.config
 train_path=${model_path}/eval
 eval_path=${model_path}/evaluate
 checkpoint_path=${model_path}/eval
-labels="/home/dexior/Data/Documents/Praca_magisterska/dataset/dataset-master/unlabeled/labels.pbtxt"
-train_record="/home/dexior/Data/Documents/Praca_magisterska/dataset/dataset-master/unlabeled/train/train.record"
-eval_record="/home/dexior/Data/Documents/Praca_magisterska/dataset/dataset-master/unlabeled/test/test.record"
+labels="${dataset_path}/labels.pbtxt"
+train_record="${dataset_path}/train/train.record"
+eval_record="${dataset_path}/test/test.record"
 
 mkdir $train_path
 mkdir $eval_path
